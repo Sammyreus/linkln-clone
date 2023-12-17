@@ -26,7 +26,7 @@ function Header(){
             <HeaderOption Icon={BusinessCenter} title="Jobs" />
             <HeaderOption Icon={Chat} title="Messages"/>
             <HeaderOption Icon={Notifications} title="Notifications"/>
-            <HeaderOption Avatar={Photo} title="Login" />
+            <HeaderOption Avatar={Photo} />
           </div>
         </div>
     )
