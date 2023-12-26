@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Feed.css';
 import InputOptions from './InputOptions';
 import { EventNote, Subscriptions,CalendarViewDay,Image,Create } from '@material-ui/icons';
+import Post from './Post.js';
 export default function Feeds() {
+    const [posts, setPosts] = useState([])  //React Hooks
   return (
     <div className='feed'>
         <div className="feed__inputContainer">
@@ -20,6 +22,10 @@ export default function Feeds() {
                 <InputOptions Icon ={CalendarViewDay} text = "Write Article" color = "#7FC15E"/>
             </div>
         </div>
+        {posts.map(()=>(
+            <Post/>
+        ))}
+        <Post name="Sammy Rues" description="This is a rest service" message = "Test for check"/>
     </div>
   )
 }

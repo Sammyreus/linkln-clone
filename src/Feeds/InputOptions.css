@@ -1,14 +1,15 @@
-.inputOptions{
-    display: flex;
+.InputOptionsIcon{
+   display: flex;
     align-items: center;
     margin-top: 15px;
     cursor: pointer;
     color:gray;
+   
 }
-.inputOptions:hover{
+.InputOptionsIcon:hover{
     background-color: whitesmoke;
     border-radius: 10px;
 }
-.inputOptions > h4{
+.InputOptionsIcon > h4{
     margin-left: 5px;
 }

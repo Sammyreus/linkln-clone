@@ -1,4 +1,5 @@
 import React from 'react'
+import './InputOptions.css'
 
 export default function InputOptions({Icon, text, color}) {
   return (
